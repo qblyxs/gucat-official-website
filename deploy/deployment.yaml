@@ -18,6 +18,6 @@ spec:
       containers:
       - name: gucat-web
         image: qblyxs/gucat-web:1.0.1
-        imagePullPolicy: always
+        imagePullPolicy: Always
         ports:
         - containerPort: 4000
