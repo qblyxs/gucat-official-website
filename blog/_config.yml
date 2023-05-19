@@ -274,20 +274,20 @@ magnet:
     - name: kubernetes
       display_name: 孤喵のkubernetes
       icon: 🍡
-    - name: 网络管理
+    - name: ingress
       display_name: 孤喵の网络管理
       icon: 🍼
-    - name: 应用部署
+    - name: deploy
       display_name: 孤喵の应用部署
       icon: 🍉
-    - name: Devops
+    - name: devops
       display_name: 孤喵のDevops
       icon: 🍟
-    - name: 运维自动化
-      display_name: 孤喵の运维自动化
+    - name: linux
+      display_name: 孤喵のlinux
       icon: 🍨
-    - name: 前端开发
-      display_name: 孤喵の前端开发
+    - name: function
+      display_name: 孤喵の云函数
       icon: 🍥
   color_setting:
     text_color: black # 文字默认颜色

@@ -1159,7 +1159,7 @@ function createtime1() {
 createtime1();
 
 function createtime2() {
-  var ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为「大聪明」`, `Photo captured: `, ` 🤪 `];
+  var ascll2 = [`NCC2-036`, `调用系统插件成功`, `from `, ` running `];
 
   setTimeout(
     console.log.bind(
@@ -1172,7 +1172,7 @@ function createtime2() {
     )
   );
 
-  setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，大聪明", "color:white; background-color:#23c682", ""));
+  setTimeout(console.log.bind(console, "%c WELCOME %c 欢迎光临，GUCAT", "color:white; background-color:#23c682", ""));
 
   setTimeout(
     console.warn.bind(
@@ -1326,11 +1326,11 @@ var titleTime;
 document.addEventListener('visibilitychange', function () {
   if (document.hidden) {
     //离开当前页面时标签显示内容
-    document.title = '👀跑哪里去了~';
+    document.title = '👀你到哪里去了~';
     clearTimeout(titleTime);
   } else {
     //返回当前页面时标签显示内容
-    document.title = '🐖抓到你啦～';
+    document.title = '🥳欢迎回来～';
     //两秒后变回正常标题
     titleTime = setTimeout(function () {
       document.title = OriginTitile;
@@ -3163,11 +3163,11 @@ let seovx = "url(http://cdn.seovx.com/?mom=302)";
 // picsum随机
 let picsum = "url(https://picsum.photos/1920/1080.webp)";
 // 小歪二次元
-// let waiDongman = "url(https://api.ixiaowai.cn/api/api.php)";
+// let waiDongman = "url(https://api.aixiaowai.cn/api/api.php)";
 //  小歪高清壁纸
 let waiBizhi = "url(https://api.aixiaowai.cn/gqapi/gqapi.php)";
 // 博天随机
-let btstu = "url(https://api.btstu.cn/doc/sjbz.php)";
+let btstu = "url(https://api.btstu.cn/sjbz/api.php?format=images)";
 // tuapi 动漫
 // let tuapi = "url(https://tuapi.eees.cc/api.php?category=dongman)";
 // unsplash随机 https://source.unsplash.com/random/1920x1080/daily (weekly)
@@ -3179,10 +3179,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    // --default-bg: url(https://lskypro.acozycotage.net/gucat/img/dm14.webp);
-    // --darkmode-bg:url(https://lskypro.acozycotage.net/gucat/img/yuanshen1.webp);
-    // --mobileday-bg: url(https://lskypro.acozycotage.net/gucat/img/snow.webp);
-    // --mobilenight-bg: url(https://lskypro.acozycotage.net/gucat/img/mb8.webp);
+    --default-bg: url(https://api.likepoems.com/img/bing?w=1920&h=1080);
+    --darkmode-bg:url(https://api.likepoems.com/img/pc?w=1920&h=1080);
+    --mobileday-bg: url(https://api.likepoems.com/img/pe);
+    --mobilenight-bg: url(https://api.likepoems.com/img/pe?m=1);
   }`;
 }
 // 切换背景主函数
@@ -3411,7 +3411,16 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 {% folding cyan, 查看二次元背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=100)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=100)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=90)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=90)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=80)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=80)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=70)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=70)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=60)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=50)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=40)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=40)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=30)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=30)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=20)" class="imgbox" onclick="changeBg('url(https://api.yimian.xyz/img?type=moe?size=1920x1080&range=20)')"></a>
 
 </div>
 {% endfolding %}
@@ -3421,22 +3430,20 @@ function createWinbox() {
 
 {% folding cyan, 查看风景背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Gucat/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Gucat/img/fj1.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=1)" class="imgbox" onclick="changeBg('url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=1)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=2)" class="imgbox" onclick="changeBg('url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=2)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=3)" class="imgbox" onclick="changeBg('url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=3)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(10)" class="imgbox" onclick="changeBg('url(10)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=4)" class="imgbox" onclick="changeBg('url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=4)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=5)" class="imgbox" onclick="changeBg('url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=5)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=6)" class="imgbox" onclick="changeBg('url(https://api.aixiaowai.cn/gqapi/gqapi2.php?height=6)')"></a>
 
 
 </div>
 {% endfolding %}
 
-<h3>3. 萌宠</h3>
 
-{% folding cyan, 查看萌宠背景 %}
-<div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Gucat/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Gucat/img/mc1.webp)')"></a>
-
-</div>
-{% endfolding %}
-
-<h3>4. 渐变色</h3>
+<h3>3. 渐变色</h3>
 {% folding cyan, 查看渐变色背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #544a7d, #ffd452)" onclick="changeBg('linear-gradient(to right, #544a7d, #ffd452)')"></a>
@@ -3451,7 +3458,7 @@ function createWinbox() {
 {% endfolding %}
 
 
-<h3>5. 纯色</h3>
+<h3>4. 纯色</h3>
 {% folding cyan, 查看纯色背景 %}
 <div class="bgbox">
 <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ecb1b1" onclick="changeBg('#ecb1b1')"></a> 
@@ -3467,16 +3474,22 @@ function createWinbox() {
 
 
 
-<h3>6. 适配手机</h3>
+<h3>5. 适配手机</h3>
 {% folding cyan, 查看适配手机的背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Gucat/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Gucat/img/mb4.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.likepoems.com/img/pe?length=1)" class="pimgbox" onclick="changeBg('url(https://api.likepoems.com/img/pe?length=1)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.likepoems.com/img/pe?length=2)" class="pimgbox" onclick="changeBg('url(https://api.likepoems.com/img/pe?length=2)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.likepoems.com/img/pe?length=3)" class="pimgbox" onclick="changeBg('url(https://api.likepoems.com/img/pe?length=3)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.likepoems.com/img/pe?length=4)" class="pimgbox" onclick="changeBg('url(https://api.likepoems.com/img/pe?length=4)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://api.likepoems.com/img/pe?length=5)" class="pimgbox" onclick="changeBg('url(https://api.likepoems.com/img/pe?length=5)')"></a>
+
+
 
 </div>
 {% endfolding %}
 
 
-<h3>7. 壁纸API</h3>
+<h3>6. 壁纸API</h3>
 {% folding cyan, 查看壁纸API系列背景 %}
 <div class="bgbox">
 <a id="bingDayBox" rel="noopener external nofollow" style="background-image: ${bingDayBg}" class="box apiBox" onclick="changeBg('${bingDayBg}')"></a>
@@ -3491,10 +3504,10 @@ function createWinbox() {
 {% endfolding %}
 
 
-<h3>8. 自定义背景</h3>
+<h3>7. 自定义背景</h3>
 {% folding cyan, 设置自定义背景 %}
 <p><center>
-<input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://source.gucat.vip/img/home_bg.webp">
+<input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://mirrors.gucat.vip/img/home_bg.webp">
 </center></p>
 <p><center>
 <button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button>
