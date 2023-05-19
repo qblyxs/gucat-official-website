@@ -10,14 +10,14 @@ menu:
     分类: /categories/ || icon-fenlei || faa-tada
   
   云原生 || icon-kubernetes || faa-tada || hide:
-    Kubernetes: /tech/k8s/ || icon-kubernetes || faa-tada
-    DevOps: /tech/devops/ || icon-tekton || faa-tada
-    应用部署: /mscf/deploy/ || icon-bushu || faa-tada
+    Kubernetes: /categories/kubernetes/ || icon-kubernetes || faa-tada
+    DevOps: /categories/devops/ || icon-tekton || faa-tada
+    linux: /categories/linux/ || icon-linux || faa-tada
 
   微服务 || icon-pinweishenghuo || faa-tada || hide:
-    Deployment: /mscf/deploy/ || icon-bushu || faa-tada
-    Ingress: /mscf/ingress/ ||icon-dianying1 || faa-tada
-    云函数: /mscf/function/ || icon-youxishoubing || faa-tada
+    应用部署: /categories/deploy/ || icon-bushu || faa-tada
+    Ingress: /categories/ingress/ ||icon-dianying1 || faa-tada
+    云函数: /categories/function/ || icon-youxishoubing || faa-tada
 
   网站 || icon-wangye || faa-tada || hide:
     友情链接: /site/link/ || icon-lianjie || faa-tada
@@ -225,10 +225,10 @@ reward:
   enable: true
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: assets/wechat.jpg
+    - img: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/wechat.jpg?inline=true
       link:
       text: 微信
-    - img: assets/alipay.jpg
+    - img: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/alipay.jpg?inline=true
       link:
       text: 支付宝
 
@@ -482,7 +482,7 @@ microsoft_clarity:
 google_adsense:
   enable: false
   auto_ads: false
-  js: #https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+  # js: #https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
   client:
   enable_page_level_ads: false
 
