@@ -1,0 +1,28 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: gucat.vip
+  namespace: gucat
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: www.gucat.vip
+      http:
+        paths:
+          - backend:
+              service:
+                name: gucat-web-service
+                port:
+                  number: 4000
+            path: /
+            pathType: Prefix
+    - host: gucat.vip
+      http:
+        paths:
+          - backend:
+              service:
+                name: gucat-web-service
+                port:
+                  number: 4000
+            path: /
+            pathType: Prefix
