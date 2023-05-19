@@ -25,7 +25,7 @@ menu:
     留言板: /comments/ || icon-liuyan || faa-tada
 
   个人 || icon-maoliang || faa-tada || hide:
-    说说: /personal/talk/ || icon-qunliaotian || faa-tada
+    分享: /personal/share/ || icon-qunliaotian || faa-tada
     私人小屋: /personal/love/ || icon-love-sign || faa-tada
     关于: /personal/about/ || icon-paperplane || faa-tada
 

@@ -7,7 +7,7 @@ title: GUCAT
 subtitle: 
 description: 'gucat 是一个技术记录站，主要涵盖 前端开发、Kubernetes、Ingress、负载均衡、Jenkins、Argocd、Devops的一些实用的脚本代码。'
 keywords: 'Kubernetes, Docker, 容器化, 集群管理, Jenkins, devops, 自动化, 技术, GUCAT🎉'
-author: 孤猫
+author: 孤喵
 language: zh-CN
 timezone: ''
 
@@ -272,22 +272,22 @@ magnet:
   devide: 3
   display:
     - name: kubernetes
-      display_name: 孤猫のkubernetes
+      display_name: 孤喵のkubernetes
       icon: 🍡
     - name: 网络管理
-      display_name: 孤猫の网络管理
+      display_name: 孤喵の网络管理
       icon: 🍼
     - name: 应用部署
-      display_name: 孤猫の应用部署
+      display_name: 孤喵の应用部署
       icon: 🍉
     - name: Devops
-      display_name: 孤猫のDevops
+      display_name: 孤喵のDevops
       icon: 🍟
     - name: 运维自动化
-      display_name: 孤猫の运维自动化
+      display_name: 孤喵の运维自动化
       icon: 🍨
     - name: 前端开发
-      display_name: 孤猫の前端开发
+      display_name: 孤喵の前端开发
       icon: 🍥
   color_setting:
     text_color: black # 文字默认颜色
