@@ -17,6 +17,6 @@ spec:
         memos: enable
       containers:
       - name: gucat-web
-        image: qblyxs/gucat-web:1.0.1-dev
+        image: qblyxs/gucat-web:1.0.2-dev
         ports:
         - containerPort: 4000
