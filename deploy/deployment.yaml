@@ -13,8 +13,6 @@ spec:
       labels:
         app: gucat-web
     spec:
-      nodeSelector:
-        memos: enable
       containers:
       - name: gucat-web
         image: qblyxs/gucat-web:1.0.2
