@@ -8,8 +8,8 @@ tags:
 categories:
   - kubernetes
 abbrlink: 20230519a
-sticky: 90
-swiper_index: 90
+sticky: 80
+swiper_index: 80
 date: 2023-05-19 18:19:03
 updated: 2023-05-19 22:00:00
 ---
