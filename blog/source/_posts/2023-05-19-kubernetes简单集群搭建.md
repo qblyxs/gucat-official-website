@@ -8,8 +8,8 @@ tags:
 categories:
   - kubernetes
 abbrlink: 20230519a
-sticky: 2
-swiper_index: 2
+sticky: 90
+swiper_index: 90
 date: 2023-05-19 18:19:03
 updated: 2023-05-19 22:00:00
 ---
@@ -365,7 +365,7 @@ vim calico.yaml
 kubectl get nodes -o wide
 kubectl get pods -A -o wide
 ```
-{% note success flat %} 等待一段时间后，所有节点状态为Ready，表示安装成功 {% endnote %}
+{% note success flat %} 等待一段时间后，所有节点状态为Ready，表示安装成功🎉🎉🎉 {% endnote %}
 
 
 本项目参考了xuxiaowei {% referto '[1]','kubernetes（k8s）安装' %} 通过kubeadm安装k8s集群的方法，另外该作者还有一系列gitlab生态的使用教程和介绍，感谢xuxiaowei的分享，也请大家多多支持该作者。 

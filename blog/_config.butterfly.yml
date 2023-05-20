@@ -158,7 +158,18 @@ cover:
   default_cover:
     # - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf?inline=true
     # ...
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/webp/default_cover_14.webp?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm1.png?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm2.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm3.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm4.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm5.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm6.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm7.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm8.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm9.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm10.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm11.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm12.jpg?inline=true
 
 # A simple 404 page
 error_404:
