@@ -46,5 +46,9 @@ comments: false
 
 <!-- endtimeline -->
 
+<!-- timeline 2023-5-21 -->
+1. 紧急修复云存储系统数据持久化失败导致图片连接失效的问题
+2. 优化云存储在k8s集群中的数据持久化方式
+<!-- endtimeline -->
 
 {% endtimeline %}
