@@ -687,8 +687,8 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - "Welcome to Gucat🥳のTiny Home!🤣🤣🤣"
-    - "Hope you have a nice day!🍭🍭🍭"
+    - "Welcome to GUCAT🥳"
+    - "我走过的弯路, 希望让你少走弯路🎉"
 
 # Loading Animation (加載動畫)
 # preloader: false
@@ -721,7 +721,8 @@ aside:
       link: https://github.com/qblyxs
   card_announcement:
     enable: true
-    content: <center><b>--- 主域名 ---<br><a href="https://gucat.vip" title="此线路部署于k8s集群" class="anno_content"><font color="#5ea6e5">gucat.vip</font></a>&nbsp;|&nbsp;<a href="https://www.gucat.vip" title="此线路部署于k8s集群" claVercelo_content"><font color="#5ea6e5">gucat.vip</font></a><br>--- 备用域名 ---<br><a href="https://gucat.cn" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br><a href="https://gucat.cn" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br>--- 网站安卓APP ---<br>🍧<a href="" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
+    content: <center><b>--- 主域名 ---<br><a href="https://gucat.vip" title="此线路部署于k8s集群" class="anno_content"><font color="#5ea6e5">gucat.vip</font></a>&nbsp;|&nbsp;<a href="https://www.gucat.vip" title="此线路部署于k8s集群" claVercelo_content"><font color="#5ea6e5">gucat.vip</font></a>
+    # <br>--- 备用域名 ---<br><a href="https://gucat.cn" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br><a href="https://gucat.cn" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br>--- 网站安卓APP ---<br>🍧<a href="" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
   card_recent_post:
     enable: false
     limit: 3 # if set 0 will show all
