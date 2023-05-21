@@ -250,5 +250,5 @@ spec:
 <!-- endtab -->
 
 ## 4. 最后展示下我的流水线
-{% image https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/job/j2.png?inline=true, width=600px, alt=jenkins负责制作hexo的镜像 %}
-{% image https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/job/a1.png?inline=true, width=600px, alt=argocd负责将服务部署到kubernetes集群中,并实时监控服务健康状态 %}
+{% image https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/job/j2.png?inline=true, width=600px, alt=jenkins负责制作hexo的镜像 %}
+{% image https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/job/a1.png?inline=true, width=600px, alt=argocd负责将服务部署到kubernetes集群中,并实时监控服务健康状态 %}
