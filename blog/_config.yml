@@ -5,8 +5,8 @@
 # Site
 title: GUCAT
 subtitle: 
-description: 'gucat 是一个技术记录站，主要涵盖 前端开发、Kubernetes、Ingress、负载均衡、Jenkins、Argocd、Devops的一些实用的脚本代码。'
-keywords: 'Kubernetes, Docker, 容器化, 集群管理, Jenkins, devops, 自动化, 技术, GUCAT🎉'
+description: '记录分享一些kubernetes, jenkins, argocd, 容器化, 云原生开发相关文章, 我走过的弯路, 希望让你少走弯路🎉'
+keywords: 'Kubernetes, Docker, Jenkins, argocd, devops, 项目移植, 容器化, 集群管理, 自动化运维, GUCAT🎉'
 author: 孤喵
 language: zh-CN
 timezone: ''
