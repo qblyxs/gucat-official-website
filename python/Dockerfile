@@ -14,7 +14,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 # 设置工作目录
 WORKDIR /app
 # 拷贝数据
-COPY ./python/Qexo /app
+COPY Qexo /app
 # 安装依赖
 RUN pip install -r requirements.txt && \
     python3 manage.py makemigrations && \
