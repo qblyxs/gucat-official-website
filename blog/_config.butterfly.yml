@@ -113,7 +113,7 @@ favicon:
 
 # Avatar (頭像)
 avatar:
-  img: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/head.jpg?inline=true
+  img: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/head.jpg?inline=true
   effect: false
 
 # Disable all banner image
@@ -156,20 +156,24 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf?inline=true
+    # - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4?inline=true
     # ...
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm1.png?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm2.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm3.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm4.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm5.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm6.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm7.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm8.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm9.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm10.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm11.jpg?inline=true
-    - https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/fengmian/fm12.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm1.png?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm2.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm3.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm4.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm5.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm6.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm7.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm8.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm9.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm10.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm11.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm12.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm13.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm14.jpg?inline=true
+    - https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/fengmian/fm15.jpg?inline=true
+    
 
 # A simple 404 page
 error_404:
@@ -236,10 +240,10 @@ reward:
   enable: true
   coinAudio: https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a
   QR_code:
-    - img: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/wechat.jpg?inline=true
+    - img: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/wechat.jpg?inline=true
       link:
       text: 微信
-    - img: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/alipay.jpg?inline=true
+    - img: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/alipay.jpg?inline=true
       link:
       text: 支付宝
 
@@ -683,8 +687,8 @@ subtitle:
   source: false
   # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
-    - "Welcome to Gucat🥳のTiny Home!🤣🤣🤣"
-    - "Hope you have a nice day!🍭🍭🍭"
+    - "Welcome to GUCAT🥳"
+    - "我走过的弯路, 希望让你少走弯路🎉"
 
 # Loading Animation (加載動畫)
 # preloader: false
@@ -717,7 +721,8 @@ aside:
       link: https://github.com/qblyxs
   card_announcement:
     enable: true
-    content: <center><b>--- 主域名 ---<br><a href="https://gucat.vip" title="此线路部署于k8s集群" class="anno_content"><font color="#5ea6e5">gucat.vip</font></a>&nbsp;|&nbsp;<a href="https://www.gucat.vip" title="此线路部署于k8s集群" claVercelo_content"><font color="#5ea6e5">gucat.vip</font></a><br>--- 备用域名 ---<br><a href="https://gucat.cn" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br><a href="https://gucat.cn" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br>--- 网站安卓APP ---<br>🍧<a href="" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
+    content: <center><b>--- 主域名 ---<br><a href="https://gucat.vip" title="此线路部署于k8s集群" class="anno_content"><font color="#5ea6e5">gucat.vip</font></a>&nbsp;|&nbsp;<a href="https://www.gucat.vip" title="此线路部署于k8s集群" claVercelo_content"><font color="#5ea6e5">gucat.vip</font></a>
+    # <br>--- 备用域名 ---<br><a href="https://gucat.cn" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br><a href="https://gucat.cn" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">gucat.cn</font></a><br>--- 网站安卓APP ---<br>🍧<a href="" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center>
   card_recent_post:
     enable: false
     limit: 3 # if set 0 will show all
@@ -1090,10 +1095,10 @@ envelope_comment:
   enable: true #控制开关
   custom_pic:
     # url_suffix: &url_suffix '?inline=true' #图片资源的url后缀  
-    cover: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/webp/violet.webp?inline=true #信笺头部图片
-    line: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/webp/line.webp?inline=true #信笺底部图片
-    beforeimg: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/webp/before.webp?inline=true # 信封前半部分
-    afterimg: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/webp/after.webp?inline=true # 信封后半部分
+    cover: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/webp/violet.webp?inline=true #信笺头部图片
+    line: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/webp/line.webp?inline=true #信笺底部图片
+    beforeimg: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/webp/before.webp?inline=true # 信封前半部分
+    afterimg: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/webp/after.webp?inline=true # 信封后半部分
   message: #信笺正文，多行文本，写法如下
     - 本站有哪些做得好或者不好的地方？
     - 或者你有什么改进的建议？

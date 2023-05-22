@@ -52,4 +52,4 @@ twikoo微服务同样通过kubernetes部署,且已配置腾讯云内容安全服
 + 擅长 ：没有什么特别擅长的,只是对技术比较感兴趣,喜欢折腾
 + 兴趣 : 云原生 | DevOps | Kubernetes | Docker | Linux | Python | Golang | Vue | React | Threejs | 机器学习 | 人工智能 | 云计算 | 云存储 | 云数据库 | 云网络 | 云安全 |
 + 取得证书 : `腾讯云架构高级工程师`
-{% image https://mirrors.gucat.vip/api/public/dl/wtvIwWJK?inline=true, width=400px, alt=欢迎项目合作,证书全称打码处理了(*^▽^*) %}
+{% image https://mirrors.gucat.vip/api/public/dl/14CAGQhl?inline=true, width=400px, alt=欢迎项目合作,证书全称打码处理了(*^▽^*) %}

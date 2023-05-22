@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gucat-web-deployment
-  namespace: gucat
+  namespace: gucat-test
 spec:
   replicas: 1
   selector:
@@ -13,10 +13,8 @@ spec:
       labels:
         app: gucat-web
     spec:
-      nodeSelector:
-        memos: enable
       containers:
       - name: gucat-web
-        image: qblyxs/gucat-web:1.0.2-dev
+        image: qblyxs/gucat-web:1.1.0-dev
         ports:
         - containerPort: 4000

@@ -6,37 +6,38 @@ type: "link"
 
 ## 本站友链添加方式：
 {% tabs link %}
-<!-- tab 🌴General -->
-
-| 名称       | 数值                                                         |
-| ---------- | ------------------------------------------------------------ |
-| 站点名称   | gucat                                                   |
-| 站点截图   | https://www.gucat.vip/assets/www.gucat.vip.jpg |
-| 站点链接   | https://www.gucat.vip/                                        |
-| 站长头像   | https://www.gucat.vip/assets/head.jpg                         |
-| 站点描述   | Future is now🍭🍭🍭                         |
-| 站点关键词 | gucat,kubernetes,devops                                     |
-
-<!-- endtab -->
 
 <!-- tab 🙋 butterfly-💭candy -->
 ```yml
     - name: gucat
       link: https://www.gucat.vip/
       avatar: https://www.gucat.vip/assets/head.jpg
-      descr: Future is now 🍭🍭🍭
-      siteshot: https://www.gucat.vip/assets/www.gucat.vip.jpg
+      descr: devops for kubernetes
+      siteshot: https://www.gucat.vip/assets/www.gucat.vip.png
 ```
+<!-- endtab -->
+
+<!-- tab 🌴General -->
+
+| 名称       | 数值                                                         |
+| ---------- | ------------------------------------------------------------ |
+| 站点名称   | gucat                                                   |
+| 站点截图   | https://www.gucat.vip/assets/www.gucat.vip.png |
+| 站点链接   | https://www.gucat.vip/                                        |
+| 站长头像   | https://www.gucat.vip/assets/head.jpg                         |
+| 站点描述   | devops for kubernetes                         |
+| 站点关键词 | gucat,kubernetes,devops                                     |
+
 <!-- endtab -->
 
 <!-- tab 🥗Volantis -->
 ```JSON
 {
   "title": "gucat",
-  "screenshot": "https://www.gucat.vip/assets/www.gucat.vip.jpg",
+  "screenshot": "https://www.gucat.vip/assets/www.gucat.vip.png",
   "url": "https://www.gucat.vip/",
   "avatar": "https://www.gucat.vip/assets/head.jpg",
-  "description": "Future is now 🍭🍭🍭",
+  "description": "devops for kubernetes",
   "keywords": "gucat,kubernetes,devops"
 }
 ```

@@ -1,10 +1,115 @@
-- class_name: 0.推荐网站🍔
-  class_desc: 这里是最熟悉的小伙伴或者赞助商，当然是最前排啦
-  link_list: 
+# - class_name: 0.推荐网站🍔
+#   class_desc: 这里是最熟悉的小伙伴或者赞助商，当然是最前排啦
+#   link_list: 
+    # - name: gucat
+    #   link: https://www.gucat.vip/
+    #   avatar: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/head.jpg?inline=true
+    #   descr: devops for kubernetes
+    #   siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/www.gucat.vip.png?inline=true
+
+#     - name: Fomalhaut🥝
+#       link: https://www.fomal.cc/
+#       avatar: https://www.fomal.cc/assets/avatar.webp
+#       descr: Future is now 🍭🍭🍭
+#       siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+
+#     - name: Jerry
+#       link: https://butterfly.js.org/
+#       avatar: https://butterfly.js.org/img/avatar.png
+#       descr: A Simple and Card UI Design theme for Hexo
+#       siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://butterfly.js.org
+
+- class_name: 1.技术支持🍔
+  class_desc: 前端大牛，模板风格的作者，本网站的UI，部分服务的配置，均来自以下伟大的开源作者
+  link_list:
     - name: gucat
       link: https://www.gucat.vip/
-      avatar: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/head.jpg?inline=true
+      avatar: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/head.jpg?inline=true
+      descr: devops for kubernetes
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/www.gucat.vip.png?inline=true
+
+    - name: Fomalhaut🥝
+      link: https://www.fomal.cc/
+      avatar: https://www.fomal.cc/assets/avatar.webp
       descr: Future is now 🍭🍭🍭
-      siteshot: https://mirrors.gucat.vip/api/public/dl/T1IFvlYf/www.gucat.cn.png?inline=true
+      siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
+
+    - name: hexo-theme-butterfly
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: A Simple and Card UI Design theme for Hexo
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/butterfly.js.org.jpg?inline=true
+
+    - name: Leonus
+      link: https://blog.leonus.cn/
+      avatar: https://q1.qlogo.cn/g?b=qq&nk=990320751&s=5
+      descr: 进一寸有进一寸的欢喜。
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/blog.leonus.cn.jpg?inline=true
 
 
+- class_name: 2.宝藏网站🔮
+  class_desc: 分享快乐，连接世界，走过一段路，愿我们永远相伴。
+  link_list:
+
+    - name: Kevinwu's Blog
+      link: https://www.kevinwu.cc/
+      avatar: https://bed.kevinwu.cc/img/avatar.webp
+      descr: 一切伟大的思想，都有一个微不足道的开始
+      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.kevinwu.cc/
+
+    - name: 湘铭`Blog
+      link: https://blog.xiangming.site/
+      avatar: https://photo.xiangming.site/img/icologo.png
+      descr: 听闻余生，相濡以沫💕
+      siteshot: https://photo.xiangming.site/img/fengmian.png
+
+    - name: LoungeXi
+      link: https://loungexi.cn/
+      avatar: https://loungexi.cn/wp-content/uploads/2023/05/yuer.jpg
+      descr: 且将新火试新茶
+      siteshot: https://loungexi.cn/wp-content/uploads/2023/05/index.png
+
+    - name: 兔兔博客
+      link: https://blog.tutuxka.eu.org/
+      avatar: https://tuchuang.voooe.cn/images/2023/04/30/FGAD64tVgAElXom.jpg
+      descr: 一个21世纪的小站
+
+    - name: Aldebaran
+      link: https://blog.aldebaran.cc
+      avatar: https://cdn.jsdelivr.net/gh/Hub-wen/blogimage/aldebaran/202304302133857.jpg
+      descr: 岁不与我，时不待我
+      siteshot: https://cdn.jsdelivr.net/gh/Hub-wen/blogimage/aldebaran/202305021901454.png
+
+
+- class_name: 3.应用生态🔮
+  class_desc: 子站点为您呈现全面而深入的架构信息，数据的桥梁建立在一整套Devops for Kubernetes的基础上。
+  link_list:
+    - name: 构建系统
+      link: https://jenkins.gucat.vip/
+      avatar: /assets/favicon.png
+      descr: 一款开源的持续集成和交付工具,具有众多的插件和扩展,减少人工干预，提高开发和交付的效率。
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/jenkins.gucat.vip.jpg?inline=true
+
+    - name: 数据系统
+      link: https://mirrors.gucat.vip/
+      avatar: /assets/favicon.png
+      descr: 存储的不只是图片,可以帮助用户快速、安全地分享、上传和下载文件。
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/mirrors.gucat.vip.jpg?inline=true
+
+    - name: 部署系统
+      link: https://argocd.gucat.vip/
+      avatar: /assets/favicon.png
+      descr: 实现 Kubernetes 应用程序的自动化部署和发布,方便管理和监控 Kubernetes 应用程序的整个生命周期。
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/argocd.gucat.vip.png?inline=true
+
+    - name: 评论插件
+      link: https://twikoo.gucat.vip/
+      avatar: /assets/favicon.png
+      descr: 一款基于小程序云开发的评论插件,支持自定义评论样式和过滤敏感词等功能。
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/twikoo.gucat.vip.png?inline=true
+
+    - name: 笔记应用
+      link: https://memos.gucat.vip/
+      avatar: /assets/favicon.png
+      descr: 一款开源的轻量级笔记应用，支持高效、快捷的笔记编辑和管理功能。
+      siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/meemos.gucat.vip.png?inline=true
