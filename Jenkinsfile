@@ -54,7 +54,7 @@ podTemplate(
                     sh "ls /kaniko/.docker/"
                     sh "ls "
                     // sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
-                    sh "/kaniko/executor --context=./python/Dockerfile --destination=${imageNamePython}:${imageTagPython}"
+                    sh "/kaniko/executor --context=./python/ --destination=${imageNamePython}:${imageTagPython}"
                 }
             }
         }
