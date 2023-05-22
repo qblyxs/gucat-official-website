@@ -53,7 +53,7 @@ podTemplate(
                         echo '等待镜像准备中...'}
                     sh "ls /kaniko/.docker/"
                     sh "ls "
-                    sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
+                    // sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
                     sh "/kaniko/executor --context=./python/Dockerfile --destination=${imageNamePython}:${imageTagPython}"
                 }
             }
