@@ -7,8 +7,8 @@ def gitCredentialsId = 'gitee-auth-qblyxs'  // git认证信息
 def imageName = 'qblyxs/gucat-web'  // 镜像名称
 // def imageTag = '1.0.${BUILD_NUMBER}-dev'  // 镜像标签
 def imageTag = '1.1.0-dev'  // 镜像标签
-def imageNamePython = 'qblyxs/gucat-python'  // 镜像名称
-def imageTagPython = '1.1.0-dev'  // 镜像标签
+// def imageNamePython = 'qblyxs/gucat-python'  // 镜像名称
+// def imageTagPython = '1.1.0-dev'  // 镜像标签
 
 
 // 注意事项
@@ -53,8 +53,8 @@ podTemplate(
                         echo '等待镜像准备中...'}
                     sh "ls /kaniko/.docker/"
                     sh "ls "
-                    // sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
-                    sh "/kaniko/executor --dockerfile=./python/Dockerfile --context=./python --destination=${imageNamePython}:${imageTagPython}"
+                    sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
+                    // sh "/kaniko/executor --dockerfile=./python/Dockerfile --context=./python --destination=${imageNamePython}:${imageTagPython}"
                 }
             }
         }
