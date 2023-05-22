@@ -16,7 +16,7 @@ WORKDIR /app
 # 拷贝数据
 COPY Qexo /app
 # 安装依赖
-RUN pip install -r requirements.txt && \
+RUN cd /app && pip install -r requirements.txt && \
     python3 manage.py makemigrations && \
     python3 manage.py migrate
 # 暴露端口
