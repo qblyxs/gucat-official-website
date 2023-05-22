@@ -52,4 +52,9 @@ comments: false
 3. 添加一部分友链和生态系统说明
 <!-- endtimeline -->
 
+<!-- timeline 2023-5-22 -->
+1. 对qexo进行研究构建,并且撰写了一篇文章
+2. 修复了一些BUG
+<!-- endtimeline -->
+
 {% endtimeline %}
