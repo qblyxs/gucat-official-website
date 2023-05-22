@@ -7,6 +7,9 @@ def gitCredentialsId = 'gitee-auth-qblyxs'  // git认证信息
 def imageName = 'qblyxs/gucat-web'  // 镜像名称
 // def imageTag = '1.0.${BUILD_NUMBER}-dev'  // 镜像标签
 def imageTag = '1.1.0-dev'  // 镜像标签
+def imageNamePython = 'qblyxs/gucat-python'  // 镜像名称
+def imageTagPython = '1.1.0-dev'  // 镜像标签
+
 
 // 注意事项
 // 1. secretVolume.secretName.'kaniko-secret' 需要提前在k8s集群中创建 kubectl create secret -n devops-tools generic kaniko-secret --from-file=/path/config.json
@@ -51,6 +54,7 @@ podTemplate(
                     sh "ls /kaniko/.docker/"
                     sh "ls "
                     sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
+                    sh "/kaniko/executor --context=./python/Dockerfile --destination=${imageNamePython}:${imageTagPython}"
                 }
             }
         }
