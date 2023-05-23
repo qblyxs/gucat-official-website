@@ -57,4 +57,9 @@ comments: false
 2. 修复了一些BUG
 <!-- endtimeline -->
 
+<!-- timeline 2023-5-23 -->
+1. 添加一部分以前的linux文章
+
+<!-- endtimeline -->
+
 {% endtimeline %}
