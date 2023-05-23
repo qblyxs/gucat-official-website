@@ -59,7 +59,8 @@ comments: false
 
 <!-- timeline 2023-5-23 -->
 1. 添加一部分以前的linux文章
-
+2. 修改首页轮播图数量
+3. 修复右侧边栏显示异常的问题
 <!-- endtimeline -->
 
 {% endtimeline %}
