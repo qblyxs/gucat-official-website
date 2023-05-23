@@ -52,4 +52,15 @@ comments: false
 3. 添加一部分友链和生态系统说明
 <!-- endtimeline -->
 
+<!-- timeline 2023-5-22 -->
+1. 对qexo进行研究构建,并且撰写了一篇文章
+2. 修复了一些BUG
+<!-- endtimeline -->
+
+<!-- timeline 2023-5-23 -->
+1. 添加一部分以前的linux文章
+2. 修改首页轮播图数量
+3. 修复右侧边栏显示异常的问题
+<!-- endtimeline -->
+
 {% endtimeline %}

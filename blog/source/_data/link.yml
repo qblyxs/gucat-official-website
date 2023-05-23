@@ -53,7 +53,7 @@
 
     - name: Kevinwu's Blog
       link: https://www.kevinwu.cc/
-      avatar: https://bed.kevinwu.cc/img/avatar.webp
+      avatar: https://npm.elemecdn.com/kevinwu@1.0.2/img/avatar.jpg
       descr: 一切伟大的思想，都有一个微不足道的开始
       siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://www.kevinwu.cc/
 
@@ -86,30 +86,30 @@
   link_list:
     - name: 构建系统
       link: https://jenkins.gucat.vip/
-      avatar: /assets/favicon.png
+      avatar: https://api.yimian.xyz/img?type=head&size=236x*&range=5
       descr: 一款开源的持续集成和交付工具,具有众多的插件和扩展,减少人工干预，提高开发和交付的效率。
       siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/jenkins.gucat.vip.jpg?inline=true
 
     - name: 数据系统
       link: https://mirrors.gucat.vip/
-      avatar: /assets/favicon.png
+      avatar: https://api.yimian.xyz/img?type=head&size=236x*&range=11
       descr: 存储的不只是图片,可以帮助用户快速、安全地分享、上传和下载文件。
       siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/mirrors.gucat.vip.jpg?inline=true
 
     - name: 部署系统
       link: https://argocd.gucat.vip/
-      avatar: /assets/favicon.png
+      avatar: https://api.yimian.xyz/img?type=head&size=236x*&range=12
       descr: 实现 Kubernetes 应用程序的自动化部署和发布,方便管理和监控 Kubernetes 应用程序的整个生命周期。
       siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/argocd.gucat.vip.png?inline=true
 
     - name: 评论插件
       link: https://twikoo.gucat.vip/
-      avatar: /assets/favicon.png
+      avatar: https://api.yimian.xyz/img?type=head&size=236x*&range=13
       descr: 一款基于小程序云开发的评论插件,支持自定义评论样式和过滤敏感词等功能。
       siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/twikoo.gucat.vip.png?inline=true
 
     - name: 笔记应用
       link: https://memos.gucat.vip/
-      avatar: /assets/favicon.png
+      avatar: https://api.yimian.xyz/img?type=head&size=236x*&range=14
       descr: 一款开源的轻量级笔记应用，支持高效、快捷的笔记编辑和管理功能。
       siteshot: https://mirrors.gucat.vip/api/public/dl/Rkcdr-Y4/site/meemos.gucat.vip.png?inline=true
