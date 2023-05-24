@@ -30,8 +30,14 @@ podTemplate(
             git branch: "${branch}", credentialsId: "${gitCredentialsId}", url: "${gitRepoUrl}"
         }
         stage('拉取私有代码') {
-            ignoreError {
+            try {
                 git branch: master, credentialsId: "${gitCredentialsId}", url: "${gitPrivRepoUrl}"
+            }
+            catch (err) {
+                echo '没有找到私有数据'
+            }
+            finally {
+                echo '继续执行'
             }
         }
         stage('操作文件') {
