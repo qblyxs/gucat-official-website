@@ -19,7 +19,8 @@ def imageTag = '1.1.0-dev'  // 镜像标签
 podTemplate(
     nodeSelector: "${nodeSelector}",
     containers: [
-    // containerTemplate(name: 'node', image: 'node:20.1-alpine', command: 'sleep', args: '99d'),
+    containerTemplate(name: 'jnlp', image: 'jenkins/inbound-agent:4.13.3-1-jdk11', command: '', args: '${computer.jnlpmac} ${computer.name}'),
+    containerTemplate(name: 'node', image: 'node:20.1-alpine', command: 'sleep', args: '99d'),
     containerTemplate(name: 'kaniko', image: 'qblyxs/kaniko:v1.9.2-debug', command: 'sleep', args: '10d')],
     volumes: [
     secretVolume(secretName: 'kaniko-secret', mountPath: '/kaniko/.docker/')
@@ -27,11 +28,14 @@ podTemplate(
     )     {
     node(POD_LABEL) {
         stage('拉取公共代码') {
-            git branch: "${branch}", credentialsId: "${gitCredentialsId}", url: "${gitRepoUrl}"
+            git branch: "${branch}", credentialsId: "${gitCredentialsId}", url: "${gitRepoUrl}"       
         }
         stage('拉取私有代码') {
+            def secondaryDirectory = "blog_data"            
             try {
-                git branch: master, credentialsId: "${gitCredentialsId}", url: "${gitPrivRepoUrl}"
+                dir(secondaryDirectory) {
+                    git branch: 'master', credentialsId: "${gitCredentialsId}", url: "${gitPrivRepoUrl}"
+                }
             }
             catch (err) {
                 echo '没有找到私有数据'
@@ -40,21 +44,25 @@ podTemplate(
                 echo '继续执行'
             }
         }
-        stage('操作文件') {
-            try {
-                sh 'ls -al'
-                sh 'mv -r ./blog_data/* ./blog/'
-            }
-            catch (err) {
-                echo '没有找到blog_data数据'
-            }
-            } 
+        timeout(time:20, unit:'SECONDS') {
+            echo '等待数据准备中...'}        
+
         if (imageType == 'node') {
             echo '如果项目为node项目,该过程将会在Dockerfile中进行构建'
         }
         else if (imageType == 'nginx') {
             stage('node正在进行构建') {
                 container('node') {
+                    stage('操作文件') {
+                        try {
+                            sh 'ls -al'
+                            sh 'mkdir -p ./blog'
+                            sh "mv -f ./blog_data/* ./blog/"
+                        }
+                        catch (err) {
+                            echo '没有找到blog_data数据'
+                        }
+                        } 
                     stage('Build a Node project') {
                         sh 'node -v'
                         sh 'npm config set registry https://registry.npmmirror.com'
@@ -87,7 +95,7 @@ podTemplate(
                         sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
                     }
                     else if (imageType == 'nginx') {
-                        sh "/kaniko/executor --dockerfile=./nginx/Dockerfile --context=./nginx --destination=${imageName}:${imageTag}"
+                        sh "/kaniko/executor --dockerfile=./nginx/Dockerfile --context=. --destination=${imageName}:${imageTag}"
                     }
                     else {
                         echo 'error'

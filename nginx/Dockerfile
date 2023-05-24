@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM nginx:alpine
 # 维护者信息
 LABEL maintainer="gucat@gucat.cn"
 # 设置时区
