@@ -57,7 +57,7 @@ podTemplate(
                         try {
                             sh 'ls -al'
                             sh 'mkdir -p ./blog'
-                            sh " \cp -rf  ./blog_data/* ./blog/"  // 强制将私有数据拷贝到项目中
+                            sh " yes | cp -rf  ./blog_data/* ./blog/"  // 强制将私有数据拷贝到项目中
                         }
                         catch (err) {
                             echo '没有找到blog_data数据'
