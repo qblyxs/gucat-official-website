@@ -13,7 +13,7 @@ spec:
               service:
                 name: gucat-web-service
                 port:
-                  number: 4000
+                  number: 80
             path: /
             pathType: Prefix
     - host: gucat.vip
@@ -23,6 +23,6 @@ spec:
               service:
                 name: gucat-web-service
                 port:
-                  number: 4000
+                  number: 80
             path: /
             pathType: Prefix

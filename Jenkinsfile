@@ -1,46 +1,87 @@
 // 定义全局变量
 // def DOCKER_REGISTRY = ''
+def imageType = 'nginx'  // 镜像类型
 def nodeSelector = 'jenkins-slave=dev'  // k8s-slave运行节点标签
 def gitRepoUrl = 'https://gitee.com/qblyxs/gucat-official-website.git'  // git仓库地址
 def branch = 'master'  // git分支
 def gitCredentialsId = 'gitee-auth-qblyxs'  // git认证信息
-def imageName = 'qblyxs/gucat-web'  // 镜像名称
-// def imageTag = '1.0.${BUILD_NUMBER}'  // 镜像标签
+def gitPrivRepoUrl = 'https://gitee.com/qblyxs/gucat-website-data.git'  // 项目私有数据,使用时请删除相关代码
+def imageName = 'qblyxs/gucat-web-nginx'  // 镜像名称
+// def imageTag = '1.0.${BUILD_NUMBER}-dev'  // 镜像标签
 def imageTag = '1.1.0'  // 镜像标签
+
 
 // 注意事项
 // 1. secretVolume.secretName.'kaniko-secret' 需要提前在k8s集群中创建 kubectl create secret -n devops-tools generic kaniko-secret --from-file=/path/config.json
 // 2. config.json中的"auth"字段及认证信息需要base64加密后填入 例如: echo -n username:password | base64
-// 3. jenkins-slave=master 需要提前在k8s集群中创建 kubectl label node k8s-node2 jenkins-slave=master
+// 3. jenkins-slave=dev 需要提前在k8s集群中创建 kubectl label node k8s-node2 jenkins-slave=dev
 
 podTemplate(
     nodeSelector: "${nodeSelector}",
     containers: [
-    // containerTemplate(name: 'node', image: 'node:20.1-alpine', command: 'sleep', args: '99d'),
+    containerTemplate(name: 'jnlp', image: 'jenkins/inbound-agent:4.13.3-1-jdk11', command: '', args: '${computer.jnlpmac} ${computer.name}'),
+    containerTemplate(name: 'node', image: 'node:20.1-alpine', command: 'sleep', args: '99d'),
     containerTemplate(name: 'kaniko', image: 'qblyxs/kaniko:v1.9.2-debug', command: 'sleep', args: '10d')],
     volumes: [
     secretVolume(secretName: 'kaniko-secret', mountPath: '/kaniko/.docker/')
     ]
     )     {
     node(POD_LABEL) {
-        stage('拉取代码') {
-            git branch: "${branch}", credentialsId: "${gitCredentialsId}", url: "${gitRepoUrl}"
+        stage('拉取公共代码') {
+            git branch: "${branch}", credentialsId: "${gitCredentialsId}", url: "${gitRepoUrl}"       
         }
-        // 打包构建过程已经集成到node容器中
-        // stage('node项目打包构建') {
-        //     container('node') {
-        //         stage('Build a Node project') {
-        //             sh 'node -v'
-        //             sh 'npm config set registry https://registry.npmmirror.com'
-        //             sh 'npm install -g hexo-cli'
-        //             sh 'cd blog && npm install' 
-        //             timeout(time:20, unit:'SECONDS') {
-        //                 echo '等待程序包准备中...'}
-        //             sh 'cd blog && hexo generate -f'
-        //             sh 'ls ./blog/public'
-        //         }
-        //     }   
-        // }
+        stage('拉取私有代码') {
+            def secondaryDirectory = "blog_data"      //新的仓库代码存放目录      
+            try {
+                dir(secondaryDirectory) {
+                    git branch: 'master', credentialsId: "${gitCredentialsId}", url: "${gitPrivRepoUrl}"
+                }
+            }
+            catch (err) {
+                echo '没有找到私有数据'
+            }
+            finally {
+                echo '继续执行'
+            }
+        }
+        timeout(time:20, unit:'SECONDS') {
+            echo '等待数据准备中...'}        
+
+        if (imageType == 'node') {
+            echo '如果项目为node项目,该过程将会在Dockerfile中进行构建'
+        }
+        else if (imageType == 'nginx') {
+            stage('node正在进行构建') {
+                container('node') {
+                    stage('操作文件') {
+                        try {
+                            sh 'ls -al'
+                            sh 'mkdir -p ./blog'
+                            sh " \cp -rf  ./blog_data/* ./blog/"  // 强制将私有数据拷贝到项目中
+                        }
+                        catch (err) {
+                            echo '没有找到blog_data数据'
+                        }
+                        } 
+                    stage('Build a Node project') {
+                        sh 'node -v'
+                        sh 'npm config set registry https://registry.npmmirror.com'
+                        sh 'npm install -g hexo-cli'
+                        sh 'cd blog && npm install' 
+                        timeout(time:20, unit:'SECONDS') {
+                            echo '等待程序包准备中...'}
+                        sh 'cd blog && hexo generate -f'
+                        sh 'ls ./blog/public'
+                    }
+                }   
+            }
+        }
+        else if (imageType == 'other') {
+            echo '预留过程'
+        }
+        else {
+            echo '请输入正确的镜像标签'
+        }
         stage('使用kaniko构建镜像并推送DockerHub') {     
             container('kaniko') {
                 // 使用jenkins进行认证
@@ -50,7 +91,16 @@ podTemplate(
                         echo '等待镜像准备中...'}
                     sh "ls /kaniko/.docker/"
                     sh "ls "
-                    sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
+                    if (imageType == 'node') {
+                        sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
+                    }
+                    else if (imageType == 'nginx') {
+                        sh "/kaniko/executor --dockerfile=./nginx/Dockerfile --context=. --destination=${imageName}:${imageTag}"
+                    }
+                    else {
+                        echo 'error'
+                    }
+                    // sh "/kaniko/executor --dockerfile=./python/Dockerfile --context=./python --destination=${imageNamePython}:${imageTagPython}"
                 }
             }
         }

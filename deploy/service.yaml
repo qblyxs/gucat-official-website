@@ -9,5 +9,5 @@ spec:
     app: gucat-web
   ports:
     - name: http
-      port: 4000
-      targetPort: 4000
+      port: 80
+      targetPort: 80
