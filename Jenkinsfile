@@ -43,10 +43,10 @@ podTemplate(
                 echo '没有找到blog_data数据'
             }
             } 
-        if (imageType = 'node') {
+        if (imageType == 'node') {
             echo '如果项目为node项目,该过程将会在Dockerfile中进行构建'
         }
-        else if (imageType = 'nginx') {
+        else if (imageType == 'nginx') {
             stage('node正在进行构建') {
                 container('node') {
                     stage('Build a Node project') {
@@ -62,7 +62,7 @@ podTemplate(
                 }   
             }
         }
-        else if (imageType = 'other') {
+        else if (imageType == 'other') {
             echo '预留过程'
         }
         else {
@@ -77,10 +77,10 @@ podTemplate(
                         echo '等待镜像准备中...'}
                     sh "ls /kaniko/.docker/"
                     sh "ls "
-                    if (imageType = 'node') {
+                    if (imageType == 'node') {
                         sh "/kaniko/executor --context=. --destination=${imageName}:${imageTag}"
                     }
-                    else if (imageType = 'nginx') {
+                    else if (imageType == 'nginx') {
                         sh "/kaniko/executor --dockerfile=./nginx/Dockerfile --context=./nginx --destination=${imageName}:${imageTag}"
                     }
                     else {
