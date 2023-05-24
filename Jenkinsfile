@@ -31,7 +31,7 @@ podTemplate(
             git branch: "${branch}", credentialsId: "${gitCredentialsId}", url: "${gitRepoUrl}"       
         }
         stage('拉取私有代码') {
-            def secondaryDirectory = "blog_data"            
+            def secondaryDirectory = "blog_data"      //新的仓库代码存放目录      
             try {
                 dir(secondaryDirectory) {
                     git branch: 'master', credentialsId: "${gitCredentialsId}", url: "${gitPrivRepoUrl}"
@@ -57,7 +57,7 @@ podTemplate(
                         try {
                             sh 'ls -al'
                             sh 'mkdir -p ./blog'
-                            sh "mv -f ./blog_data/* ./blog/"
+                            sh " \cp -rf  ./blog_data/* ./blog/"  // 强制将私有数据拷贝到项目中
                         }
                         catch (err) {
                             echo '没有找到blog_data数据'
