@@ -1,5 +1,5 @@
-# gucat-official-website项目dev开发分支
-# 本分支为开发测试新功能使用变化较大,请勿直接使用
+# gucat-official-website
+
 # GUCAT 官网
 
 这是一个基于 Node 的 Hexo 静态网站官网，主要用于分享 K8s DevOps 相关的知识和经验，包括 Jenkins、ArgoCD、Twikoo、Memos 等各种服务，并提供相关代码和配置清单。
@@ -56,6 +56,7 @@
 - v1.0.2：新增 Jenkins、ArgoCD、Twikoo、Memos 等服务的文章和资源清单
 - v1.0.x: 修复一系列出现的BUG
 - v1.1.0：发布第一个线上版本。
+- v1.2.0: 发布多种镜像,包括基于node的web镜像,基于nginx的web镜像,基于python的qexo镜像等
 
 ## 问题与反馈
 

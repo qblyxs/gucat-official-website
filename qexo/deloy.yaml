@@ -1,0 +1,73 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: qexo
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: qexo-deployment
+  namespace: qexo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: qexo
+  template:
+    metadata:
+      labels:
+        app: qexo
+    spec:
+      containers:
+      - name: qexo
+        image: qblyxs/qexo:1.0 #替换成自己使用的镜像
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
+        volumeMounts:
+        - name: db-volume
+          mountPath: /app/db
+        - name: data-volume
+          mountPath: /app/data
+      volumes:
+      - name: db-volume
+        hostPath:
+          path: /mnt/app/db
+      - name: data-volume
+        hostPath:
+          path: /mnt/app/data
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: qexo-service
+  namespace: qexo
+spec:
+  type: NodePort
+  ports:
+  - port: 8000
+    targetPort: 8000
+    nodePort: 31400 #可替换成自己想要的端口 30000-32767 ,或者不写,随机分配
+  selector:
+    app: qexo
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: qexo-ingress
+  namespace: qexo
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: hexo.gucat.vip
+      http:
+        paths:
+          - backend:
+              service:
+                name: qexo-service
+                port:
+                  number: 8000
+            path: /
+            pathType: Prefix
+---
