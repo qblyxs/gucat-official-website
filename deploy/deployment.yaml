@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: gucat-web
-        image: qblyxs/gucat-web-nginx:1.1.0
+        image: qblyxs/gucat-web-nginx:1.2.0
         imagePullPolicy: Always
         ports:
         - containerPort: 80
