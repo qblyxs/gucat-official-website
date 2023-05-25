@@ -8,7 +8,7 @@ def gitCredentialsId = 'gitee-auth-qblyxs'  // git认证信息
 def gitPrivRepoUrl = 'https://gitee.com/qblyxs/gucat-website-data.git'  // 项目私有数据,使用时请删除相关代码
 def imageName = 'qblyxs/gucat-web'  // 镜像名称
 // def imageTag = '1.0.${BUILD_NUMBER}-dev'  // 镜像标签
-def imageTag = '1.1.${BUILD_NUMBER}'  // 镜像标签
+def imageTag = '1.2.0'  // 镜像标签
 def robotID = '9527'  // 机器人ID
 
 // jenkins变量

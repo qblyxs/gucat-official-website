@@ -56,6 +56,7 @@
 - v1.0.2：新增 Jenkins、ArgoCD、Twikoo、Memos 等服务的文章和资源清单
 - v1.0.x: 修复一系列出现的BUG
 - v1.1.0：发布第一个线上版本。
+- v1.2.0: 发布多种镜像,包括基于node的web镜像,基于nginx的web镜像,基于python的qexo镜像等
 
 ## 问题与反馈
 
