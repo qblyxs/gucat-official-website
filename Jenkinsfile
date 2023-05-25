@@ -1,6 +1,6 @@
 // 定义全局变量
 // def DOCKER_REGISTRY = ''
-def imageType = 'none'  // 镜像类型 node nginx qexo other none
+def imageType = 'node'  // 镜像类型 node nginx qexo other none
 def nodeSelector = 'jenkins-slave=dev'  // k8s-slave运行节点标签
 def gitRepoUrl = 'https://gitee.com/qblyxs/gucat-official-website.git'  // git仓库地址
 def branch = 'master'  // git分支
@@ -9,7 +9,7 @@ def gitPrivRepoUrl = 'https://gitee.com/qblyxs/gucat-website-data.git'  // 项�
 def imageName = 'qblyxs/gucat-web'  // 镜像名称
 // def imageTag = '1.0.${BUILD_NUMBER}-dev'  // 镜像标签
 def imageTag = '1.2.0'  // 镜像标签
-def robotID = '9527'  // 机器人ID
+def robotID = 'g001'  // 机器人ID
 
 // jenkins变量
 def pipelineName = env.JOB_NAME
