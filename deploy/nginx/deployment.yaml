@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gucat-web-deployment
+  namespace: gucat
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: gucat-web-nginx
+  template:
+    metadata:
+      labels:
+        app: gucat-web-nginx
+    spec:
+      containers:
+      - name: gucat-web-nginx
+        image: qblyxs/gucat-web-nginx:1.2.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+---

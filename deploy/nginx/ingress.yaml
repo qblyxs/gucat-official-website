@@ -1,6 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
   name: gucat.vip
   namespace: gucat
 spec:
@@ -11,7 +13,7 @@ spec:
         paths:
           - backend:
               service:
-                name: gucat-web-service
+                name: gucat-web-service-nginx
                 port:
                   number: 80
             path: /
@@ -21,7 +23,7 @@ spec:
         paths:
           - backend:
               service:
-                name: gucat-web-service
+                name: gucat-web-service-nginx
                 port:
                   number: 80
             path: /

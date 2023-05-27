@@ -7,16 +7,16 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: gucat-web
+      app: gucat-web-node
   template:
     metadata:
       labels:
-        app: gucat-web
+        app: gucat-web-node
     spec:
       containers:
-      - name: gucat-web
-        image: qblyxs/gucat-web-nginx:1.2.0
+      - name: gucat-web-node
+        image: qblyxs/gucat-web-node:1.2.0
         imagePullPolicy: Always
         ports:
-        - containerPort: 80
+        - containerPort: 4000
 ---

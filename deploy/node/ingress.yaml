@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernetes.io/force-ssl-redirect: 'true'
+  name: gucat.vip
+  namespace: gucat
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: www.gucat.vip
+      http:
+        paths:
+          - backend:
+              service:
+                name: gucat-web-service-node
+                port:
+                  number: 4000
+            path: /
+            pathType: Prefix
+    - host: gucat.vip
+      http:
+        paths:
+          - backend:
+              service:
+                name: gucat-web-service-node
+                port:
+                  number: 4000
+            path: /
+            pathType: Prefix
