@@ -1,6 +1,6 @@
 // 定义全局变量
 // def DOCKER_REGISTRY = ''
-def imageType = 'none'  // 镜像类型
+def imageType = 'nginx'  // 镜像类型
 def nodeSelector = 'jenkins-slave=dev'  // k8s-slave运行节点标签
 def gitRepoUrl = 'https://gitee.com/qblyxs/gucat-official-website.git'  // git仓库地址
 def branch = 'dev'  // git分支
